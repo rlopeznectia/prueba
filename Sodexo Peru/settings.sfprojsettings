@@ -6,7 +6,9 @@
     "parameters": {}
   },
   "CodeMapPerProject": {
-    "collapsedPanels": []
+    "collapsedPanels": [
+      "SDXAGIL_ConsultasSOQL"
+    ]
   },
   "SettingsVersion": 1
 }
