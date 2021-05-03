@@ -15,13 +15,13 @@
         <RemoteItemProperties>
             <ItemKey>src\classes\SDXAGIL_ConsultasSOQL.cls</ItemKey>
             <Id>01p0m000003R0kEAAS</Id>
-            <Hash>3IQsrhjlJQQrRim7PSGxQA==</Hash>
-            <LastModifiedDateUtcTicks>132645442290000000</LastModifiedDateUtcTicks>
+            <Hash>wTshq5vPUy0RyGULchVvsw==</Hash>
+            <LastModifiedDateUtcTicks>132645451980000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\SDXAGIL_ConsultasSOQL.cls-meta.xml</ItemKey>
             <Hash>ITk8IBouLlqjS58pMk2idw==</Hash>
-            <LastModifiedDateUtcTicks>132645442290000000</LastModifiedDateUtcTicks>
+            <LastModifiedDateUtcTicks>132645451980000000</LastModifiedDateUtcTicks>
         </RemoteItemProperties>
         <RemoteItemProperties>
             <ItemKey>src\classes\SDXAGIL_Helper_Class.cls</ItemKey>
