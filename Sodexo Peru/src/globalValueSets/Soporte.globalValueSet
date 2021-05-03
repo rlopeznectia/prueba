@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Tarjeta</fullName>
+        <default>false</default>
+        <label>Tarjeta</label>
+    </customValue>
+    <customValue>
+        <fullName>Vale</fullName>
+        <default>false</default>
+        <label>Vale</label>
+    </customValue>
+    <customValue>
+        <fullName>E-Commerce</fullName>
+        <default>false</default>
+        <label>E-Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>E-Vale</fullName>
+        <default>false</default>
+        <label>E-Vale</label>
+    </customValue>
+    <customValue>
+        <fullName>Vale Físico</fullName>
+        <default>false</default>
+        <label>Vale Físico</label>
+    </customValue>
+    <customValue>
+        <fullName>Vale Virtual</fullName>
+        <default>false</default>
+        <label>Vale Virtual</label>
+    </customValue>
+    <masterLabel>Soporte</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

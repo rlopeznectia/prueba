@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4aea44d6-feb5-4a67-9175-b3ca5c5cd04f}</ProjectGuid>
+    <ApexVersion>48.0</ApexVersion>
+    <Name>Sodexo Peru</Name>
+    <AssemblyName>Sodexo Peru</AssemblyName>
+    <RootNamespace>Sodexo Peru</RootNamespace>
+    <ProjectVersion>6</ProjectVersion>
+    <PackageVersion>1.34.2.4</PackageVersion>
+    <SyncOption>False</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="classes\" />
+    <Folder Include="customMetadata\" />
+    <Folder Include="globalValueSets\" />
+    <Folder Include="objects\" />
+    <Folder Include="pages\" />
+    <Folder Include="Soql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="customMetadata\API_SodexoAgil.API_SodexoAgil.md">
+      <SubType>CustomMetadata</SubType>
+      <PhysicalRelativePath>src\customMetadata\API_SodexoAgil.API_SodexoAgil.md</PhysicalRelativePath>
+      <MetadataType>CustomMetadata</MetadataType>
+    </Object>
+    <Object Include="globalValueSets\Codigo_Producto.globalValueSet">
+      <PhysicalRelativePath>src\globalValueSets\Codigo_Producto.globalValueSet</PhysicalRelativePath>
+      <SubType>GlobalValueSet</SubType>
+    </Object>
+    <Object Include="globalValueSets\Frecuencia.globalValueSet">
+      <PhysicalRelativePath>src\globalValueSets\Frecuencia.globalValueSet</PhysicalRelativePath>
+      <SubType>GlobalValueSet</SubType>
+    </Object>
+    <Object Include="globalValueSets\ProductoParaSoporte.globalValueSet">
+      <PhysicalRelativePath>src\globalValueSets\ProductoParaSoporte.globalValueSet</PhysicalRelativePath>
+      <SubType>GlobalValueSet</SubType>
+    </Object>
+    <Object Include="globalValueSets\SDXDepartamento.globalValueSet">
+      <PhysicalRelativePath>src\globalValueSets\SDXDepartamento.globalValueSet</PhysicalRelativePath>
+      <SubType>GlobalValueSet</SubType>
+    </Object>
+    <Object Include="globalValueSets\SDXProvincia.globalValueSet">
+      <PhysicalRelativePath>src\globalValueSets\SDXProvincia.globalValueSet</PhysicalRelativePath>
+      <SubType>GlobalValueSet</SubType>
+    </Object>
+    <Object Include="globalValueSets\Soporte.globalValueSet">
+      <PhysicalRelativePath>src\globalValueSets\Soporte.globalValueSet</PhysicalRelativePath>
+      <SubType>GlobalValueSet</SubType>
+    </Object>
+    <Object Include="objects\Account.object">
+      <PhysicalRelativePath>src\objects\Account.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountContactRelation.object">
+      <PhysicalRelativePath>src\objects\AccountContactRelation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountContactRole.object">
+      <PhysicalRelativePath>src\objects\AccountContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountTeamMember.object">
+      <PhysicalRelativePath>src\objects\AccountTeamMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Activity.object">
+      <PhysicalRelativePath>src\objects\Activity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ActivityRecurrence2Exception.object">
+      <PhysicalRelativePath>src\objects\ActivityRecurrence2Exception.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\API_SodexoAgil__mdt.object">
+      <SubType>Object</SubType>
+      <PhysicalRelativePath>src\objects\API_SodexoAgil__mdt.object</PhysicalRelativePath>
+      <MetadataType>CustomObject</MetadataType>
+    </Object>
+    <Object Include="objects\Asset.object">
+      <PhysicalRelativePath>src\objects\Asset.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssetRelationship.object">
+      <PhysicalRelativePath>src\objects\AssetRelationship.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssistantProgress.object">
+      <PhysicalRelativePath>src\objects\AssistantProgress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssociatedLocation.object">
+      <PhysicalRelativePath>src\objects\AssociatedLocation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuthorizationForm.object">
+      <PhysicalRelativePath>src\objects\AuthorizationForm.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuthorizationFormConsent.object">
+      <PhysicalRelativePath>src\objects\AuthorizationFormConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuthorizationFormDataUse.object">
+      <PhysicalRelativePath>src\objects\AuthorizationFormDataUse.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AuthorizationFormText.object">
+      <PhysicalRelativePath>src\objects\AuthorizationFormText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Campaign.object">
+      <PhysicalRelativePath>src\objects\Campaign.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CampaignMember.object">
+      <PhysicalRelativePath>src\objects\CampaignMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Case.object">
+      <PhysicalRelativePath>src\objects\Case.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CaseContactRole.object">
+      <PhysicalRelativePath>src\objects\CaseContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChatterActivity.object">
+      <PhysicalRelativePath>src\objects\ChatterActivity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroup.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroup.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroupMember.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroupMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscription.object">
+      <PhysicalRelativePath>src\objects\CommSubscription.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscriptionChannelType.object">
+      <PhysicalRelativePath>src\objects\CommSubscriptionChannelType.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscriptionConsent.object">
+      <PhysicalRelativePath>src\objects\CommSubscriptionConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CommSubscriptionTiming.object">
+      <PhysicalRelativePath>src\objects\CommSubscriptionTiming.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ConsumptionRate.object">
+      <PhysicalRelativePath>src\objects\ConsumptionRate.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ConsumptionSchedule.object">
+      <PhysicalRelativePath>src\objects\ConsumptionSchedule.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contact.object">
+      <PhysicalRelativePath>src\objects\Contact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointAddress.object">
+      <PhysicalRelativePath>src\objects\ContactPointAddress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointConsent.object">
+      <PhysicalRelativePath>src\objects\ContactPointConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointEmail.object">
+      <PhysicalRelativePath>src\objects\ContactPointEmail.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointPhone.object">
+      <PhysicalRelativePath>src\objects\ContactPointPhone.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactPointTypeConsent.object">
+      <PhysicalRelativePath>src\objects\ContactPointTypeConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactRequest.object">
+      <PhysicalRelativePath>src\objects\ContactRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContentVersion.object">
+      <PhysicalRelativePath>src\objects\ContentVersion.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contract.object">
+      <PhysicalRelativePath>src\objects\Contract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContractContactRole.object">
+      <PhysicalRelativePath>src\objects\ContractContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DataUseLegalBasis.object">
+      <PhysicalRelativePath>src\objects\DataUseLegalBasis.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DataUsePurpose.object">
+      <PhysicalRelativePath>src\objects\DataUsePurpose.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Distrito__c.object">
+      <PhysicalRelativePath>src\objects\Distrito__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordItem.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordSet.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordSet.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EmailMessage.object">
+      <PhysicalRelativePath>src\objects\EmailMessage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EngagementChannelType.object">
+      <PhysicalRelativePath>src\objects\EngagementChannelType.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Event.object">
+      <PhysicalRelativePath>src\objects\Event.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExchangeUserMapping.object">
+      <PhysicalRelativePath>src\objects\ExchangeUserMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExpressionFilter.object">
+      <PhysicalRelativePath>src\objects\ExpressionFilter.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExpressionFilterCriteria.object">
+      <PhysicalRelativePath>src\objects\ExpressionFilterCriteria.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExternalEventMapping.object">
+      <PhysicalRelativePath>src\objects\ExternalEventMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FeedItem.object">
+      <PhysicalRelativePath>src\objects\FeedItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingAdjustment.object">
+      <PhysicalRelativePath>src\objects\ForecastingAdjustment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingCategoryMapping.object">
+      <PhysicalRelativePath>src\objects\ForecastingCategoryMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingOwnerAdjustment.object">
+      <PhysicalRelativePath>src\objects\ForecastingOwnerAdjustment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingQuota.object">
+      <PhysicalRelativePath>src\objects\ForecastingQuota.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingTypeToCategory.object">
+      <PhysicalRelativePath>src\objects\ForecastingTypeToCategory.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Idea.object">
+      <PhysicalRelativePath>src\objects\Idea.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Image.object">
+      <PhysicalRelativePath>src\objects\Image.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Individual.object">
+      <PhysicalRelativePath>src\objects\Individual.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Lead.object">
+      <PhysicalRelativePath>src\objects\Lead.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Location.object">
+      <PhysicalRelativePath>src\objects\Location.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\LocationTrustMeasure.object">
+      <PhysicalRelativePath>src\objects\LocationTrustMeasure.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Macro.object">
+      <PhysicalRelativePath>src\objects\Macro.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroAction.object">
+      <PhysicalRelativePath>src\objects\MacroAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroInstruction.object">
+      <PhysicalRelativePath>src\objects\MacroInstruction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroUsage.object">
+      <PhysicalRelativePath>src\objects\MacroUsage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ManagedContentVersion.object">
+      <PhysicalRelativePath>src\objects\ManagedContentVersion.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MLModel.object">
+      <PhysicalRelativePath>src\objects\MLModel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MLModelFactor.object">
+      <PhysicalRelativePath>src\objects\MLModelFactor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MLModelFactorComponent.object">
+      <PhysicalRelativePath>src\objects\MLModelFactorComponent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Opportunity.object">
+      <PhysicalRelativePath>src\objects\Opportunity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityCompetitor.object">
+      <PhysicalRelativePath>src\objects\OpportunityCompetitor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityContactRole.object">
+      <PhysicalRelativePath>src\objects\OpportunityContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityLineItem.object">
+      <PhysicalRelativePath>src\objects\OpportunityLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Order.object">
+      <PhysicalRelativePath>src\objects\Order.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrderItem.object">
+      <PhysicalRelativePath>src\objects\OrderItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrgMetricScanResult.object">
+      <PhysicalRelativePath>src\objects\OrgMetricScanResult.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrgMetricScanSummary.object">
+      <PhysicalRelativePath>src\objects\OrgMetricScanSummary.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerRole.object">
+      <PhysicalRelativePath>src\objects\PartnerRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartyConsent.object">
+      <PhysicalRelativePath>src\objects\PartyConsent.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Pricebook2.object">
+      <PhysicalRelativePath>src\objects\Pricebook2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PricebookEntry.object">
+      <PhysicalRelativePath>src\objects\PricebookEntry.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProcessException.object">
+      <PhysicalRelativePath>src\objects\ProcessException.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Product2.object">
+      <PhysicalRelativePath>src\objects\Product2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProductConsumptionSchedule.object">
+      <PhysicalRelativePath>src\objects\ProductConsumptionSchedule.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProfileSkill.object">
+      <PhysicalRelativePath>src\objects\ProfileSkill.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProfileSkillEndorsement.object">
+      <PhysicalRelativePath>src\objects\ProfileSkillEndorsement.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ProfileSkillUser.object">
+      <PhysicalRelativePath>src\objects\ProfileSkillUser.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PromptAction.object">
+      <PhysicalRelativePath>src\objects\PromptAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuickText.object">
+      <PhysicalRelativePath>src\objects\QuickText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuickTextUsage.object">
+      <PhysicalRelativePath>src\objects\QuickTextUsage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Quote.object">
+      <PhysicalRelativePath>src\objects\Quote.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuoteLineItem.object">
+      <PhysicalRelativePath>src\objects\QuoteLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Recommendation.object">
+      <PhysicalRelativePath>src\objects\Recommendation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RecordAction.object">
+      <PhysicalRelativePath>src\objects\RecordAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RecordMergeHistory.object">
+      <PhysicalRelativePath>src\objects\RecordMergeHistory.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Scorecard.object">
+      <PhysicalRelativePath>src\objects\Scorecard.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardAssociation.object">
+      <PhysicalRelativePath>src\objects\ScorecardAssociation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardMetric.object">
+      <PhysicalRelativePath>src\objects\ScorecardMetric.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SDX_Direccion__c.object">
+      <PhysicalRelativePath>src\objects\SDX_Direccion__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Site.object">
+      <PhysicalRelativePath>src\objects\Site.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SocialPersona.object">
+      <PhysicalRelativePath>src\objects\SocialPersona.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SocialPost.object">
+      <PhysicalRelativePath>src\objects\SocialPost.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Solution.object">
+      <PhysicalRelativePath>src\objects\Solution.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamActivityAccess.object">
+      <PhysicalRelativePath>src\objects\StreamActivityAccess.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamingChannel.object">
+      <PhysicalRelativePath>src\objects\StreamingChannel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Tabla_de_Precios__c.object">
+      <PhysicalRelativePath>src\objects\Tabla_de_Precios__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Task.object">
+      <PhysicalRelativePath>src\objects\Task.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Topic.object">
+      <PhysicalRelativePath>src\objects\Topic.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\TopicAssignment.object">
+      <PhysicalRelativePath>src\objects\TopicAssignment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\User.object">
+      <PhysicalRelativePath>src\objects\User.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\UserProvisioningRequest.object">
+      <PhysicalRelativePath>src\objects\UserProvisioningRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\WorkBadge.object">
+      <PhysicalRelativePath>src\objects\WorkBadge.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\WorkBadgeDefinition.object">
+      <PhysicalRelativePath>src\objects\WorkBadgeDefinition.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\WorkThanks.object">
+      <PhysicalRelativePath>src\objects\WorkThanks.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\SDXAGIL_ClientRegistrarResp_JSON.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_ClientRegistrarResp_JSON.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_ConsultasSOQL.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_ConsultasSOQL.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_Helper_Class.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_Helper_Class.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_MockHttpResponseError.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseError.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_MockHttpResponseEx.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseEx.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_MockHttpResponseGenerator.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseGenerator.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_MockHttpResponseToken.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseToken.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_MockHttpResponseTokenError.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseTokenError.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_TokenResponse_Class.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_TokenResponse_Class.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_TokenResponse_Class_Test.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_TokenResponse_Class_Test.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_TokenResponse_JSON.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_TokenResponse_JSON.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_WsContrato_Controller.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_WsContrato_Controller.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="classes\SDXAGIL_WsContrato_Controller_Test.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_WsContrato_Controller_Test.cls</PhysicalRelativePath>
+      <MetadataType>ApexClass</MetadataType>
+    </Compile>
+    <Compile Include="pages\SDXAGIL_WsContrato.page">
+      <SubType>Page</SubType>
+      <PhysicalRelativePath>src\pages\SDXAGIL_WsContrato.page</PhysicalRelativePath>
+      <MetadataType>ApexPage</MetadataType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classes\SDXAGIL_ClientRegistrarResp_JSON.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_ClientRegistrarResp_JSON.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_ClientRegistrarResp_JSON.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_ConsultasSOQL.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_ConsultasSOQL.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_ConsultasSOQL.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_Helper_Class.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_Helper_Class.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_Helper_Class.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_MockHttpResponseError.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseError.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_MockHttpResponseError.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_MockHttpResponseEx.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseEx.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_MockHttpResponseEx.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_MockHttpResponseGenerator.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseGenerator.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_MockHttpResponseGenerator.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_MockHttpResponseToken.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseToken.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_MockHttpResponseToken.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_MockHttpResponseTokenError.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_MockHttpResponseTokenError.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_MockHttpResponseTokenError.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_TokenResponse_Class.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_TokenResponse_Class.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_TokenResponse_Class.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_TokenResponse_Class_Test.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_TokenResponse_Class_Test.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_TokenResponse_Class_Test.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_TokenResponse_JSON.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_TokenResponse_JSON.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_TokenResponse_JSON.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_WsContrato_Controller.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_WsContrato_Controller.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_WsContrato_Controller.cls</DependentUpon>
+    </None>
+    <None Include="classes\SDXAGIL_WsContrato_Controller_Test.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\SDXAGIL_WsContrato_Controller_Test.cls-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>classes\SDXAGIL_WsContrato_Controller_Test.cls</DependentUpon>
+    </None>
+    <None Include="pages\SDXAGIL_WsContrato.page-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\pages\SDXAGIL_WsContrato.page-meta.xml</PhysicalRelativePath>
+      <MetadataType>Metadata</MetadataType>
+      <DependentUpon>pages\SDXAGIL_WsContrato.page</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>

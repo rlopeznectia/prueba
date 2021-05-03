@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# The Welkin Suite Solution File, Format Version 11.00
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{99DDE922-26B8-45F6-9776-7310255F16BA}") = "Sodexo Peru", "Sodexo Peru\Sodexo Peru.sfproj", "{4AEA44D6-FEB5-4A67-9175-B3CA5C5CD04F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AEA44D6-FEB5-4A67-9175-B3CA5C5CD04F}.Debug|x86.ActiveCfg = Debug|x86
+		{4AEA44D6-FEB5-4A67-9175-B3CA5C5CD04F}.Debug|x86.Build.0 = Debug|x86
+		{4AEA44D6-FEB5-4A67-9175-B3CA5C5CD04F}.Release|x86.ActiveCfg = Release|x86
+		{4AEA44D6-FEB5-4A67-9175-B3CA5C5CD04F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
