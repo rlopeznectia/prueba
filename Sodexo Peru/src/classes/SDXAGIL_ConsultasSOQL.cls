@@ -8,6 +8,8 @@
   No. Fecha                Autor                     Descripción
   ------ ---------- ---------------------------------------------------------------
   1.0 08-04-2021            RL                   Creación de Clase.
+  1234556789
+  ESTO ES UNA PRUEBA
  *****************************/
 
 public class SDXAGIL_ConsultasSOQL  {
