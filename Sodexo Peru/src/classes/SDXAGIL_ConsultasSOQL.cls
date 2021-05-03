@@ -8,8 +8,7 @@
   No. Fecha                Autor                     Descripción
   ------ ---------- ---------------------------------------------------------------
   1.0 08-04-2021            RL                   Creación de Clase.
-  1234556789
-  ESTO ES UNA PRUEBA
+  1.1 03-05-2021			RL					 Se Agrega SOQL Query
  *****************************/
 
 public class SDXAGIL_ConsultasSOQL  {
